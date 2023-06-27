@@ -1,0 +1,149 @@
+body {
+  background-image: url(background-site.jpeg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(45, 44, 44, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(240, 240, 244);
+  /* codigo de contorno das letras alternativo */
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  margin-top: 30px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(238, 102, 5, 0.298);
+  transition: transform 0.3s ease-out;
+}
+
+.login-container input[type="submit"]:hover {
+  transform: scale(1.07);
+  transition-duration: 0.8s;
+}
+
+
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* entrada de texto e calunas */
+.login-container input[type="email"],
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(255, 255, 255, 0.8);
+
+}
+
+.login-container input[type="email"]:valid,
+.login-container input[type="text"]:valid,
+.login-container input[type="password"]:valid {
+  color: rgb(20, 143, 28);
+}
+
+#toggle-password {
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 60px;
+  color: white;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+#toggle-password:hover {
+  color: rgba(238, 102, 5, 0.836);
+}
+.esqueceu-senha {
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 60px;
+  left: 180px;
+  color: white;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.esqueceu-senha:hover {
+  color: rgba(238, 102, 5, 0.836);
+}
+
+.Slogin{
+ color: white;
+cursor: pointer;
+position: absolute;
+top: calc(100% + -28px);
+left: 50%;
+transform: translateX(-50%);
+text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+.Slogin:hover {
+  color: rgb(238, 102, 5, 0.836);
+}
+
+#OwAlee {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 6px;
+  color: white;
+  max-width: 150px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  position: absolute;
+  /* cálculo de espaçamento */
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color 0.8s ease-in, transform 0.3s ease-in-out;
+}
+
+#OwAlee:hover {
+  color: rgb(238, 102, 5, 0.836);
+  transform: translateX(-50%) scale(1.1);
+}
+
+
+.login-container button {
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    width: 90%;
+    max-width: none;
+  }
+
+  #OwAlee {
+    top: calc(100% + 10px);
+  }
+}
